@@ -2,36 +2,45 @@ from pyrogram import Client, filters
 from config import app, redis, HNDLR
 import redis, asyncio
 
-@Client.on_message(filters.command(["الاوامر"], prefixes=f"{HNDLR}") & filters.me)
+@app.on_message(filters.command(["الاوامر","اوامري"], prefixes=f"{HNDLR}") & filters.me)
 async def cmd(app, msg):
-	cmd = """
-☆ `.م¹` | اوامر الحساب
-☆ `.م²` | اوامر اليوتيوب
-☆ `.م³` | اوامر اضافيه
+	cmd = f"""
+☆ `{HNDLR}م¹` | اوامر الحساب
+☆ `{HNDLR}م²` | اوامر اليوتيوب
+☆ `{HNDLR}م³` | اوامر اضافيه
+☆ `{HNDLR}م⁴` | اوامر السورس
 ♧ ——————♤—————— ♧
 • قناه السورس : @YDDCK
 • المبرمج : @VR_LA
 	"""
 	await msg.edit(cmd)
-@Client.on_message(filters.command(["م1","م¹"], prefixes=f"{HNDLR}") & filters.me)
+@app.on_message(filters.command(["م1","م¹"], prefixes=f"{HNDLR}") & filters.me)
 async def help1(app, msg):
-	help1 = """
-☆ `.تفعيل الساعه` | تفعيل ، تعطيل الساعه
-☆ `.ايدي` | بالرد لعرض معلومات الحساب
-☆ `.تليجراف` | بالرد علي صوره لرفعها تليجراف
+	help1 = f"""
+☆ `{HNDLR}تفعيل الساعه` | تفعيل ، تعطيل الساعه
+☆ `{HNDLR}ايدي` | بالرد لعرض معلومات الحساب
+☆ `{HNDLR}تليجراف` | بالرد علي صوره لرفعها تليجراف
 	"""
 	await msg.edit(help1)
-@Client.on_message(filters.command(["م2","م²"], prefixes=f"{HNDLR}") & filters.me)
+@app.on_message(filters.command(["م2","م²"], prefixes=f"{HNDLR}") & filters.me)
 async def help2(app, msg):
-	help2 = """
-☆ `.بحث` | للبحث في يوتيوب
-☆ `.غ` | لتحميل صوتي
-☆ `.ف` | لتحميل فيديو
+	help2 = f"""
+☆ `{HNDLR}بحث` | للبحث في يوتيوب
+☆ `{HNDLR}غ` | لتحميل صوتي
+☆ `{HNDLR}ف` | لتحميل فيديو
 	"""
 	await msg.edit(help2)
-@Client.on_message(filters.command(["م3","م³"], prefixes=f"{HNDLR}") & filters.me)
+@app.on_message(filters.command(["م3","م³"], prefixes=f"{HNDLR}") & filters.me)
 async def help3(app, msg):
-	help3 = """
-☆ `.دفتر` | للكتابه في دفتر
+	help3 = f"""
+☆ `{HNDLR}دفتر` | للكتابه في دفتر
+☆ `{HNDLR}انتحال` | لانتحال اي حساب تريده
 	"""
 	await msg.edit(help3)
+@app.on_message(filters.command(["م4","م⁴"], prefixes=f"{HNDLR}") & filters.me)
+async def help4(app, msg):
+	help4 = f"""
+☆ `{HNDLR}بينج` | لمعرفه سرعه السورس
+☆ `{HNDLR}speedtest` | سرعه الانترنت بالصوره
+	"""
+	await msg.edit(help4)
