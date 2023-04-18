@@ -6,3 +6,4 @@ youtube-search-python
 pillow
 requests
 yt_dlp
+speedtest-cli
