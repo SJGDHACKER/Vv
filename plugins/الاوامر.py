@@ -17,7 +17,8 @@ async def cmd(app, msg):
 @app.on_message(filters.command(["م1","م¹"], prefixes=f"{HNDLR}") & filters.me)
 async def help1(app, msg):
 	help1 = f"""
-☆ `{HNDLR}تفعيل الساعه` | تفعيل ، تعطيل الساعه
+☆ `{HNDLR}الساعه` | تفعيل ، تعطيل الساعه
+☆ `{HNDLR}الصوره الوقتيه` | تفعيل ، تعطيل الصوره الوقتيه
 ☆ `{HNDLR}ايدي` | بالرد لعرض معلومات الحساب
 ☆ `{HNDLR}تليجراف` | بالرد علي صوره لرفعها تليجراف
 	"""
