@@ -30,6 +30,10 @@
         "REDIS_URL": {
             "description": "redis url you can get it from (https://redislabs.com)",
             "required": true 
+        },
+        "TIMEZONE": {
+            "description": "Your timezone (don't edit it if you don't understand)",
+            "required": true 
         }
     },
     "formation": {
