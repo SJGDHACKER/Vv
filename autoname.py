@@ -4,16 +4,6 @@ from config import app, redis, SUDO_ID
 from pyrogram.errors import FloodWait
 from PIL import Image, ImageFont, ImageDraw
 
-def virus(title_text):
-	try:
-		my_image = Image.open("image.png")
-		title_font = ImageFont.truetype("digital.ttf", 200)
-		image_editable = ImageDraw.Draw(my_image)
-		image_editable.text((400,500), title_text, (237, 230, 211), font=title_font)
-		my_image.save("time.jpg")
-	except Exception as e:
-		print(e)
-
 def zhrf_time(time):
   time = str(time)
   repl = ["𝟬","𝟭","𝟮","𝟯","𝟰","𝟱","𝟲","𝟳","𝟴","𝟵"]
@@ -35,20 +25,3 @@ async def main():
             await sleep(0)
       except FloodWait as e:
          await asynco.sleep(e.value)
-
-async def photo():
-	ay = None
-	while redis.get(f"{SUDO_ID}clock"):
-		time = strftime("%I:%M")
-		print("hi")
-		try:
-			if ay != time:
-				virus(time)
-				photos = [p async for p in app.get_chat_photos("me")]
-				await app.delete_profile_photos(photos[0].file_id)
-				await app.set_profile_photo(photo="time.jpg")
-				ay = time
-			else:
-				await sleep(1)
-		except FloodWait as e:
-			await asynco.sleep(e.value)
