@@ -35,6 +35,7 @@ async def help3(app, msg):
 	help3 = f"""
 ☆ `{HNDLR}دفتر` | للكتابه في دفتر
 ☆ `{HNDLR}انتحال` | لانتحال اي حساب تريده
+☆ `{HNDLR}رجوع` | لاعاده الحساب كما كان
 	"""
 	await msg.edit(help3)
 @app.on_message(filters.command(["م4","م⁴"], prefixes=f"{HNDLR}") & filters.me)
