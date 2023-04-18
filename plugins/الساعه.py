@@ -5,7 +5,7 @@ from autoname import main as name
 from autoname import photo
 import time, os
 os.environ["TZ"] = timezone
-#time.tzset()
+time.tzset()
 
 @app.on_message(filters.command("تعطيل الساعه$",prefixes=f"{HNDLR}") & filters.me )
 async def clockk(c,msg):
