@@ -1,0 +1,8 @@
+pyrogram 
+tgcrypto
+wget
+redis
+youtube-search-python
+pillow
+requests
+yt_dlp
