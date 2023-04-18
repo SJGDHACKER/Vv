@@ -3,6 +3,7 @@ from pyrogram import Client, filters, enums, idle
 from asyncio import get_event_loop
 from config import app
 from autoname import main as name
+from autoname import profile
 import asyncio
 
 async def main():
@@ -15,6 +16,7 @@ async def main():
 		pass
 	await idle()
 	await name()
+	await profile()
 
 print("VIRUS_USERBOT STARTED")
 loop = get_event_loop()
