@@ -26,10 +26,10 @@ async def unclockk(c,msg):
 
 @app.on_message(filters.command("تعطيل الصوره الوقتيه$",prefixes=f"{HNDLR}") & filters.me)
 async def clockk(c,msg):
-	await msg.edit("• تم تعطيل الساعه")
+	await msg.edit("• تم تعطيل الصوره الوقتيه")
 	redis.delete(f"{SUDO_ID}clock")
 @app.on_message(filters.command("تفعيل الصوره الوقتيه$",prefixes=f"{HNDLR}") & filters.me)
 async def unclockk(c,msg):
-	await msg.edit("• تم تفعيل الساعه")
+	await msg.edit("• تم تفعيل الصوره الوقتيه")
 	redis.set(f"{SUDO_ID}clock","virus")
 	await profile()
