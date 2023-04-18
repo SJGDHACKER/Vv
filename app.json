@@ -30,12 +30,12 @@
         "REDIS_URL": {
             "description": "redis url you can get it from (https://redislabs.com)",
             "required": true 
-        }
+        },
     },
     "formation": {
         "worker": {
             "quantity": 1,
             "size": "Eco"
-        }
+        },
     },
 }
