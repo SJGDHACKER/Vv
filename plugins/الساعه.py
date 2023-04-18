@@ -1,7 +1,10 @@
 # الكود واخده من @FPFFG
 from pyrogram import Client, filters
-from config import app, HNDLR, redis, SUDO_ID
+from config import app, HNDLR, redis, SUDO_ID, timezone
 from autoname import main as name
+import time, os
+os.environ["TZ"] = timezone
+time.tzset()
 
 @app.on_message(filters.command("تعطيل الساعه$",prefixes=f"{HNDLR}") & filters.me )
 async def clockk(c,msg):
