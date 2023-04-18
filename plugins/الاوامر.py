@@ -42,5 +42,6 @@ async def help4(app, msg):
 	help4 = f"""
 ☆ `{HNDLR}بينج` | لمعرفه سرعه السورس
 ☆ `{HNDLR}speedtest` | سرعه الانترنت بالصوره
+☆ `{HNDLR}السورس` | لعرض معلومات السورس
 	"""
 	await msg.edit(help4)
