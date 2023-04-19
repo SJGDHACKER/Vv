@@ -1,4 +1,3 @@
-# الكود واخده من @FPFFG
 from pyrogram import Client, filters
 from config import app, HNDLR, redis, SUDO_ID, timezone
 from autoname import main as name
