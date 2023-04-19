@@ -1,13 +1,14 @@
 # الكود واخده من @YYYBD , @FPFFG
 from pyrogram import Client, filters, enums, idle
 from asyncio import get_event_loop
-from config import app
+from config import app, bot
 from autoname import main as name
 from autoname import profile
 import asyncio
 
 async def main():
 	await app.start()
+	await bot.start()
 	try:
 		await app.join_chat("YDDCJ")
 		await app.join_chat("YDDCK")

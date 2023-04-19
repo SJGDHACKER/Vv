@@ -9,6 +9,14 @@
             "description": "Pyrogram String Session",
             "required": true
         },
+        "TOKEN": {
+            "description": "Your bot token",
+            "required": true
+        },
+        "USERBOT": {
+            "description": "Your bot username",
+            "required": true
+        },
         "API_ID": {
             "description": "my.telegram.org",
             "required": true
@@ -33,6 +41,7 @@
         },
         "TIMEZONE": {
             "description": "Your timezone (don't edit it if you don't understand)",
+            "value": "Africa/Cairo",
             "required": true 
         }
     },
