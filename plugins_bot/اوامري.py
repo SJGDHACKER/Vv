@@ -15,7 +15,7 @@ async def cmd(client, inline_query):
 		results=[
 			InlineQueryResultArticle(
 				title="الاوامر",
-				input_message_content=InputTextMessageContent(f"☆ `{HNDLR}م¹` ↢ اوامر الحساب\n☆ `{HNDLR}م²` ↢ اوامر اليوتيوب\n☆ `{HNDLR}م³` ↢ اوامر الوقتي\n☆ `{HNDLR}م⁴` ↢ اوامر السورس\n☆ `{HNDLR}م5` ↢ اوامر الالعاب"),
+				input_message_content=InputTextMessageContent(f"☆ `{HNDLR}م¹` ↢ اوامر الحساب\n☆ `{HNDLR}م²` ↢ اوامر اليوتيوب\n☆ `{HNDLR}م³` ↢ اوامر الوقتي\n☆ `{HNDLR}م⁴` ↢ اوامر السورس\n☆ `{HNDLR}م⁵` ↢ اوامر الالعاب"),
 				url="https://t.me/V_IRUuS",
 				description="🧑‍💻 Developer",
 				reply_markup=reply_markup
