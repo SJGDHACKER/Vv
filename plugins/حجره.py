@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from config import app, HNDLR, USERBOT
+from config import app, HNDLR, userbot
 import asyncio
 
 @app.on_message(filters.command("حجره$", prefixes=f"{HNDLR}") & filters.me)
