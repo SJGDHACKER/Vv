@@ -80,5 +80,6 @@ async def help5(app, msg):
 
 ☆ `{HNDLR}اكس او` ↢ لعبه اكس او
 ☆ `{HNDLR}ريفرسي` ↢ لعبه ريفرسي
+☆ `{HNDLR}حجره` ↢ لعبه حجره ورقه مقص
 	"""
 	await msg.edit(help5)
