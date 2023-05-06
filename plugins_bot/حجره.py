@@ -28,8 +28,8 @@ async def answer_inline_query(bot, query):
 	cache_time=1
 )
 
-@app.on_callback_query(filters.regex("virus") & filters.user(SUDO_ID))
-async def answer_callback_query(client, query):
+@bot.on_callback_query(filters.regex("virus") & filters.user(SUDO_ID))
+async def answer_callback_query(bot, query):
 	user_choice = query.data.split("&×&")[1]
 	result = await play_game(user_choice, chat_id)
 	await query.edit_message_text(result, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🪨 حجره", callback_data="virus&×&حجره")],[InlineKeyboardButton("📄 ورقه", callback_data="virus&×&ورقه")],[InlineKeyboardButton("✂️ مقص", callback_data="virus&×&مقص")]]))
