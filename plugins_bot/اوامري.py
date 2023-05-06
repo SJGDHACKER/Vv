@@ -76,6 +76,7 @@ help5 = f"""
 
 ☆ `{HNDLR}اكس او` ↢ لعبه اكس او
 ☆ `{HNDLR}ريفرسي` ↢ لعبه ريفرسي
+☆ `{HNDLR}حجره` ↢ لعبه حجره ورقه مقص
 """
 
 @bot.on_callback_query(filters.regex("^help1$") & filters.user(SUDO_ID))
