@@ -2,7 +2,7 @@
 <p align="center"><img src="https://j.top4top.io/p_2683597ym1.jpg" alt="ICON" width="150" height="150"/></p>
 
 <h4 align="center">
-    A simple User-Bot written in Pyrogram using redis.
+    ©️ Powered By: @V_IRUuS
 </h4>
 <p align="center">
     <a href="https://t.me/YDDCK"> Support Channel </a> •
