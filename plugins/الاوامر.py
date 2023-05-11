@@ -68,6 +68,8 @@ async def help4(app, msg):
 ☆ `{HNDLR}بينج` ↢ لمعرفه سرعه السورس
 ☆ `{HNDLR}speedtest` ↢ سرعه الانترنت بالصوره
 
+☆ `{HNDLR}سحب` ↢ سحب ملفات المواقع
+
 ☆ `{HNDLR}السورس` ↢ لعرض معلومات السورس
 	"""
 	await msg.edit(help4)
